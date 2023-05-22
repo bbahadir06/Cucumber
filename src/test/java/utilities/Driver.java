@@ -14,13 +14,12 @@ public class Driver {
         /*
         we use this class by reaching getDriver() method so we wont create any object from this class
         To prevent others creating new object from this class
-    ​
         we can make constructor private
-    ​
-        This is called SINGLETON PATERN ( preventing creating object )
+
+        This is called SINGLETON PATTERN ( preventing creating object )
          */
 
-    private Driver(){ // SINGLETON PATERN
+    private Driver(){ // SINGLETON PATTERN
 
     }
 
@@ -70,7 +69,7 @@ public class Driver {
         return driver;
     }
 
-    // to close opened driver // if a driver is opened, this method will close it. If there is no drider, it wont do anything
+    // to close opened driver // if a driver is opened, this method will close it. If there is no drider, it won't do anything
     public static void closeDriver(){
         if (driver!=null) {
             driver.close();

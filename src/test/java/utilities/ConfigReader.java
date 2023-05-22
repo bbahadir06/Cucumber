@@ -16,6 +16,7 @@ public class ConfigReader {
             FileInputStream fis = new FileInputStream(filePath);
             properties = new Properties();
             properties.load(fis);
+
         } catch (FileNotFoundException e) {
             System.out.println("file could not be found");
         } catch (IOException e) {
